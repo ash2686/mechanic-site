@@ -559,14 +559,12 @@ html,body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bolder;
-    padding: .5rem 0;
+    /* padding: .5rem 0; */
 }
 
-.gr-button .gr p{
-    background-color: blue;
-}
+
 
 
 
