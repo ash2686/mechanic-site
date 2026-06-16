@@ -2,7 +2,8 @@ let menuButton =  document.getElementById("menu-button");
 let ctaButton = document.getElementById("cta-button");
 let ctaMenu = document.querySelector(".ctas-menu");
 let mainMenu = document.querySelector(".main-menu");
-let menuItems = document.querySelectorAll(".main-menu li");
+let menuItems = document.querySelectorAll(".main-menu li a");
+let ctaItems = document.querySelectorAll(".ctas-menu li a");
 
 console.log(menuItems);
 
@@ -32,18 +33,27 @@ menuButton.addEventListener("click",()=>{
        mainMenu.style.transform = "translateY(-200%)";
        mainMenu.style.zIndex = "0";
         menuItems.forEach(item=>{
-            item.style.opacity = "none";
-            item.addEventListener("click",()=>{
+            item.style.opacity = "0";         
+        })
+
+    }
+})
+
+menuItems.forEach(item=>{
+
+item.addEventListener("click",()=>{
+                console.log("a clicked")
                  menuButton.classList.replace("fa-xmark","fa-bars"); 
                  mainMenu.style.opacity = "0";
                  mainMenu.style.height = "0";
                  mainMenu.style.transform = "translateY(-200%)";
                  mainMenu.style.zIndex = "0";
             })
-        })
 
-    }
+
 })
+
+   
 
 
 document.addEventListener("click", (e) => {
@@ -100,4 +110,15 @@ ctaButton.addEventListener("click",()=>{
 
 
 
+})
+
+ctaItems.forEach(item=>{
+    item.addEventListener("click",()=>{
+        ctaButton.style.transform = "rotate(0deg)";
+        // ctaMenu.style.display = "none";
+        ctaMenu.style.height = "0";
+        ctaMenu.style.opacity = "0";
+        ctaMenu.style.transform = "translateY(-200%)";
+        ctaMenu.style.zIndex = "0";
+    })
 })

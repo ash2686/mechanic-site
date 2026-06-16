@@ -68,6 +68,14 @@ html,body{
     /* background-color: var(--fs-green); */
 }
 
+.site-header .site-logo-block a{
+    width: 100%;
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .site-header .site-logo-block img{
     object-fit: contain;
     width: 70%;
@@ -540,7 +548,7 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4.5rem;
+    font-size: 4rem;
     /* background-color: orange; */
 }
 
@@ -551,8 +559,13 @@ html,body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bolder;
+    padding: .5rem 0;
+}
+
+.gr-button .gr p{
+    background-color: blue;
 }
 
 
