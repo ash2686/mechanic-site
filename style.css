@@ -495,7 +495,7 @@ html,body{
 
 
 #about-me .about-me-content{
-    height: 70%;
+    height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
