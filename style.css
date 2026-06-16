@@ -314,7 +314,7 @@ html,body{
 
 .hero-info .hero-info-name-block h1{
     margin-bottom: 1rem;
-    color: green;
+    color: red;
 }
 
 .hero-info .hero-info-name-block h4{
@@ -495,7 +495,7 @@ html,body{
 
 
 #about-me .about-me-content{
-    height: 50%;
+    height: 60%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -514,8 +514,7 @@ html,body{
 
 .about-me-content .reviews-block{
     width: 100%;
-    flex: 1;
-    /* background-color: red; */
+    height: 20%;  /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -541,7 +540,7 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 4,5rem;
     /* background-color: orange; */
 }
 
@@ -552,7 +551,7 @@ html,body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bolder;
 }
 

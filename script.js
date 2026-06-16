@@ -33,6 +33,13 @@ menuButton.addEventListener("click",()=>{
        mainMenu.style.zIndex = "0";
         menuItems.forEach(item=>{
             item.style.opacity = "none";
+            item.addEventListener("click",()=>{
+                 menuButton.classList.replace("fa-xmark","fa-bars"); 
+                 mainMenu.style.opacity = "0";
+                 mainMenu.style.height = "0";
+                 mainMenu.style.transform = "translateY(-200%)";
+                 mainMenu.style.zIndex = "0";
+            })
         })
 
     }
