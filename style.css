@@ -314,7 +314,7 @@ html,body{
 
 .hero-info .hero-info-name-block h1{
     margin-bottom: 1rem;
-    color: yellow;
+    /* color: yellow; */
 }
 
 .hero-info .hero-info-name-block h4{
@@ -458,6 +458,10 @@ html,body{
     padding-top: 12vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)) ;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #about-me .about-me-header{
