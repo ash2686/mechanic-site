@@ -246,6 +246,12 @@ html,body{
 .main-menu li a{
     text-decoration: none;
     color: black;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-menu li:last-child{
@@ -322,7 +328,7 @@ html,body{
 
 .hero-info .hero-info-name-block h1{
     margin-bottom: 1rem;
-    color: red;
+    /* color: red; */
 }
 
 .hero-info .hero-info-name-block h4{
@@ -548,7 +554,8 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 3rem;
+    color: red;
     /* background-color: orange; */
 }
 
@@ -565,11 +572,75 @@ html,body{
 }
 
 
+/* ********************************* CONTACT ME **************************************** */
 
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 12vh;
+    display: flex;
+    flex-direction: column;
+}
 
+#contact .contact-header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
+#contact .contact-main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
 
+.contact-main .contact-form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.contact-form input{
+    width: 100%;
+    height: 15%;
+    padding: 0 1rem;
+    border: 1px solid grey;
+}
+
+.contact-form textarea{
+    resize: none;
+    width: 100%;
+    height: 35%;
+    overflow-y: auto;
+    padding: .5rem;
+    border: 1px solid grey;
+}
+
+.contact-form #send-message{
+    width: 100%;
+    height: 15%;
+    border-radius: 5px;
+}
+
+.contact-main .contact-map{
+    width: 100%;
+    height: 40%;
+    padding: 0 1rem;
+}
+
+.contact-main .contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -745,6 +816,32 @@ html,body{
 
 .reviews-block a i{
     font-size: 7rem;
+}
+
+#contact .contact-main{
+    
+    display: flex;
+    flex-direction: row;
+    /* background-color: yellow; */
+}
+
+.contact-main .contact-form{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.contact-main .contact-map{
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    /* background-color: yellow; */
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+    /* display: none; */
 }
 
 }
