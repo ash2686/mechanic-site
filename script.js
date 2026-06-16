@@ -1,0 +1,75 @@
+let menuButton =  document.getElementById("menu-button");
+let ctaButton = document.getElementById("cta-button");
+let ctaMenu = document.querySelector(".ctas-menu");
+let mainMenu = document.querySelector(".main-menu");
+let menuItems = document.querySelectorAll(".main-menu li");
+
+console.log(menuItems);
+
+menuButton.addEventListener("click",()=>{
+
+     if(ctaButton.style.transform = "rotate(45deg)"){
+          ctaButton.style.transform = "rotate(0deg)";
+        // ctaMenu.style.display = "none";
+        ctaMenu.style.height = "0";
+        ctaMenu.style.opacity = "0";
+
+     }
+
+    if(menuButton.classList.contains("fa-bars")){
+        menuButton.classList.replace("fa-bars","fa-xmark");
+        mainMenu.style.height = "300%"
+        mainMenu.style.opacity = "1";
+        menuItems.forEach(item=>{
+            item.style.opacity = "1";
+        })
+    }else{
+       menuButton.classList.replace("fa-xmark","fa-bars"); 
+       mainMenu.style.opacity = "0";
+       mainMenu.style.height = "0";
+        menuItems.forEach(item=>{
+            item.style.opacity = "none";
+        })
+
+    }
+})
+
+
+document.addEventListener("click", (e) => {
+  if (!mainMenu.contains(e.target) && !menuButton.contains(e.target)) {
+         menuButton.classList.replace("fa-xmark","fa-bars"); 
+         mainMenu.style.opacity = "0";
+         mainMenu.style.height = "0";
+         menuItems.forEach(item=>{
+            item.style.opacity = "none";
+        })
+  }
+});
+
+ctaButton.addEventListener("click",()=>{
+
+    if(menuButton.classList.contains("fa-xmark")){
+        menuButton.classList.replace("fa-xmark","fa-bars"); 
+       mainMenu.style.opacity = "0";
+       mainMenu.style.height = "0";
+        menuItems.forEach(item=>{
+            item.style.opacity = "none";
+        })
+    }
+
+    if(ctaButton.style.transform === "rotate(0deg)"){
+        ctaButton.style.transform = "rotate(45deg)";
+        // ctaMenu.style.display = "flex";
+        ctaMenu.style.height = "300%";
+        ctaMenu.style.opacity = "1";
+
+    }else{
+        ctaButton.style.transform = "rotate(0deg)";
+        // ctaMenu.style.display = "none";
+        ctaMenu.style.height = "0";
+        ctaMenu.style.opacity = "0";
+    }
+
+
+
+})
