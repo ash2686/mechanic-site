@@ -44,6 +44,13 @@ document.addEventListener("click", (e) => {
             item.style.opacity = "none";
         })
   }
+
+  if(!ctaMenu.contains(e.target) && !ctaButton.contains(e.target)){
+    ctaButton.style.transform = "rotate(0deg)";
+        // ctaMenu.style.display = "none";
+        ctaMenu.style.height = "0";
+        ctaMenu.style.opacity = "0";
+  }
 });
 
 ctaButton.addEventListener("click",()=>{
