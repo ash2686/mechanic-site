@@ -347,6 +347,13 @@ html,body{
     font-size: 1.2rem;
 }
 
+.hero-info .hero-info-name-block button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
 .hero-info .hero-info-address-block{
     width: 100%;
     height: 60%;
@@ -612,8 +619,9 @@ html,body{
 .contact-form input{
     width: 100%;
     height: 15%;
-    padding: 0 1rem;
+    padding: 0 .5rem;
     border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .contact-form textarea{
@@ -623,6 +631,7 @@ html,body{
     overflow-y: auto;
     padding: .5rem;
     border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .contact-form #send-message{
@@ -644,9 +653,52 @@ html,body{
 
 
 
+/* ******************************************** SITE FOOTER ******************************************* */
 
+.site-footer{
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8));
+    color: white;
+}
 
+.site-footer .site-links{
+    margin-bottom: 1rem;
+    /* border-right: 2px solid white; */
+    padding: 0 1rem;
+    
+}
 
+.site-footer .site-links a{
+    color: white;
+}
+
+.site-footer .payments{
+    display: flex;
+    /* padding: 0 1rem; */
+    /* flex-direction: column; */
+}
+
+.payments .pay-item{
+    width: 3rem;
+    height: 2rem;
+    margin: 0 .3rem;
+}
+
+.payments .pay-item img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.payments .pay-item img:last-child{
+    border-radius: 8px;
+}
 
 
 
