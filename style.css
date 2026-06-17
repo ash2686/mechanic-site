@@ -658,7 +658,7 @@ html,body{
 .site-footer{
     width: 100%;
     height: auto;
-    padding: 2rem 1rem;
+    padding:1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -670,23 +670,33 @@ html,body{
 .site-footer .site-links{
     margin-bottom: 1rem;
     /* border-right: 2px solid white; */
-    padding: 0 1rem;
+    padding: 0 .5rem;
     
 }
 
 .site-footer .site-links a{
     color: white;
+    margin: 0 .5rem;
 }
 
 .site-footer .payments{
+    width: 100%;
     display: flex;
+    margin: 1rem 0;
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content: space-between;
     /* padding: 0 1rem; */
     /* flex-direction: column; */
 }
 
+.site-footer .payments p{
+    font-size: .8rem;
+}
+
 .payments .pay-item{
-    width: 3rem;
-    height: 2rem;
+    width: 2.8rem;
+    height: 1.8rem;
     margin: 0 .3rem;
 }
 
@@ -697,7 +707,7 @@ html,body{
 }
 
 .payments .pay-item img:last-child{
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
 
